@@ -1,0 +1,140 @@
+/* 
+Theme Name: Hello Elementor Child
+Theme URI: https://github.com/elementor/hello-theme-child/
+Description: Hello Elementor Child is a child theme of Hello Elementor, created by Elementor team
+Author: Elementor Team
+Author URI: https://elementor.com/
+Template: hello-elementor
+Version: 2.0.0
+Text Domain: hello-elementor-child
+License: GNU General Public License v3 or later.
+License URI: https://www.gnu.org/licenses/gpl-3.0.html
+Tags: flexible-header, custom-colors, custom-menu, custom-logo, editor-style, featured-images, rtl-language-support, threaded-comments, translation-ready
+*/
+
+/* Add your custom styles here */
+
+@font-face {
+    font-family: 'Eurostile LT Std';
+    src: url("./fonts/EurostileLTStd.otf") format("OpenType");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Eurostile LT Std';
+    src: url("./fonts/EurostileLTStd Bold.otf") format("OpenType");
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'EurostileLTStd Ex2';
+    src: url("./fonts/EurostileLTStd Ex2.otf") format("OpenType");
+    
+}
+
+/* Header css */
+.mega-menu .header-logo h1{ 
+    font-family: 'EurostileLTStd Ex2' !important;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 4.4px;
+    text-transform: uppercase;
+    max-width: 250px;
+}
+.megamenu a.dialog-close-button.dialog-lightbox-close-button .eicon-close:before {
+    content: "";
+    background-image: url(/wp-content/uploads/2023/09/menu-open.svg);
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background-repeat: no-repeat;
+    right: 0;
+}
+.megamenu .dialog-close-button.dialog-lightbox-close-button:after {
+    position: relative;
+    top: -2px;
+    content: "Menü schliessen";
+    left: -40px;
+    color: #FFF;
+    font-family: IBM Plex Sans;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.megamenu .mega-menu-link {
+    margin: auto 0 !important;
+}
+
+.mega-menu.sticky-header {
+    background: #FFF;
+}
+.menu-contact a{
+    transition: all 0.3s;
+}
+.menu-contact a:hover {
+    color: #242427 !important;
+}
+.menu-page-title{
+    margin: 0 20px 0 auto;
+}
+.menu-page-title span.headerTitle {
+    display: block;
+    color: #242427;
+    text-align: right;
+    font-family: IBM Plex Sans;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;
+    padding: 0;
+}
+
+
+@media (max-width:1024px) {
+    .megamenu .elementor.elementor-209.elementor-location-popup {
+        height: 100%;
+        overflow: scroll;
+    }
+    .megamenu .elementor-element.elementor-element-8820b32.e-con-full.mega-popup.e-flex.e-con.e-parent {
+     
+        justify-content: space-around;
+        height: 80%;
+        padding-bottom: 0;
+        overflow-y: auto;
+        min-height: 100vh;
+    }
+    .megamenu .elementor-element.elementor-element-aac710a.elementor-nav-menu__align-right.elementor-nav-menu--dropdown-none.mega-menu-link.elementor-widget.elementor-widget-nav-menu {
+        margin: 0 !important;
+        overflow-y: auto;
+    }
+}
+@media (max-width:430px) {
+    .mega-menu .header-logo h1{
+        max-width: 210px;
+    }
+}
+
+
+
+/* Footer css start */
+
+.osa-footer-section a{
+    transition: 0.3s all;
+}
+.osa-footer-section a:hover{
+    color: #C79696 !important;
+}
+@media (max-width:768px){
+    .osa-footer-section > div{
+        display: flex !important;
+        flex-wrap: wrap !important;
+    }   
+}
+@media (max-width:767px) {
+    .menu-page-title span.headerTitle {
+        display: none;
+    }
+}

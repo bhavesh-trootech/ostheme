@@ -1,0 +1,458 @@
+/* Home Page CSS starts */
+
+.osa-button .elementor-align-icon-right {
+    display: flex;
+    align-items: center;
+}
+
+.osa-button .elementor-align-icon-right svg {
+    width: 17px;
+    height: 22px;
+}
+
+.osa-button a:hover .elementor-align-icon-right svg path {
+    fill: #C79696;
+    transition: all 0.3s;
+}
+
+.slider .slick-arrow {
+    display: none !important;
+}
+
+.slider__item {
+    position: relative;
+    /* height: 100vh; */
+}
+
+.slider__item img {
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+.slider__counter {
+    /* position: absolute; */
+    bottom: 0;
+    right: 90px;
+    z-index: 1;
+    color: #242427;
+    font-family: IBM Plex Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 27px;
+    /* mix-blend-mode: difference; */
+    /* pointer-events: none; */
+}
+
+.slider.slick-slider {
+    margin-bottom: 0 !important;
+}
+
+.slider__item .elementor-widget-heading .elementor-widget-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.cursor{
+    position: fixed;
+    width: 30px;
+    height: 30px;
+    /* border: 1px solid red; */
+    border-radius: 50%;
+    left: 0;
+    top: 0;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    /* transition: 0.1s; */
+}
+
+/* .cursor2{
+    position: fixed;
+    width: 8px;
+    height: 8px;
+    border: 1px solid red;
+    background-color: red;
+    border-radius: 50%;
+    left: 0;
+    top: 0;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    transition: all 0.05s;
+} */
+
+.osa-image-col a, .osa-image-col .projectImg, .osa-image-col .projectTitle{
+    cursor: none;
+}
+
+/* .osa-image-col .projectTitle{
+    width: max-content;
+} */
+
+.circle{
+    /* transform: translate(-50%, -50%) scale(1.5); */
+    background-color: #C79696;
+    /* transition: all 0.05s; */
+}
+
+/* project section css */
+.osa-project-section .projectImg {
+    line-height: 0;
+    padding-bottom: 30px;
+}
+.osa-project-section .projectImg img {
+    width: 100%;
+}
+.osa-project-section .projectTitle a {
+    color: #242427;
+    font-family: IBM Plex Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    padding-left: 30px;
+    transition: all 0.3s;
+    word-break: break-word;
+}
+.osa-project-section .projectTitle a:hover{
+    color: #C79696;
+}
+
+@media (max-width: 1024px) {
+    .osa-button .elementor-align-icon-right {
+        margin-left: 15px !important;
+    }
+    .slider__counter {
+        right: 30px;
+    }
+    .osa-project-section .projectTitle a {
+        padding-left: 0px;
+    }
+}
+
+@media (max-width: 430px) {
+    .osa-button .elementor-align-icon-right svg {
+        width: 15px;
+        height: 20px;
+    }
+
+    .osa-button .elementor-align-icon-right {
+        margin-left: 10px !important;
+    }
+
+    .slider__counter {
+        right: 20px;
+    }
+
+    .slider__item .elementor-widget-heading .elementor-widget-container {
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 5px;
+    }
+    .osa-project-section .projectTitle a {
+        font-size: 17px;
+    }
+    .osa-project-section .projectImg {
+        padding-bottom: 15px;
+    }
+
+    .osa-image-col .projectTitle {
+        width: auto;
+    }
+}
+
+/* Home Page CSS ends */
+
+
+/* Contact Page CSS starts */
+
+.osa-contact-link a:hover {
+    color: #C79696 !important;
+    transition: all 0.3s;
+}
+
+/* Contact Page CSS ends */
+
+/* Buro Page CSS starts */
+
+.buro-text-para .bold-text{
+    font-weight: 500;
+}
+
+.buro-text-para a{
+    color: #242427;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    text-decoration-thickness: 2px;
+    transition: all 0.3s;
+}
+
+.buro-text-para a svg{
+    width: 11.551px;
+    height: 20px;
+    border-bottom: 2px solid #242427;
+    margin-bottom: -7px;
+    margin-left: -1px;
+    padding-bottom: 5px;
+    transition: all 0.3s;
+}
+
+.buro-text-para a svg path{
+    transition: all 0.3s;
+}
+
+.buro-text-para a:hover{
+    color: #C79696;
+}
+
+.buro-text-para a:hover svg{
+    border-bottom: 2px solid #C79696;
+}
+
+.buro-text-para a:hover svg path{
+    fill: #C79696;
+}
+
+.buro-pdf-section p{
+    color: #242427;
+    font-family: IBM Plex Sans;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 30.6px;
+}
+
+.buro-pdf-section:last-child .pdf-button{
+    margin-bottom: 100px;
+}
+
+.buro-pdf-section .pdf-button p{
+    color: #C79696;
+}
+
+.buro-pdf-section h2{
+    color: #242427;
+    font-family: IBM Plex Sans;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 61.2px;
+    margin: 0;
+    padding-bottom: 20px;
+}
+
+.buro-pdf-section .pdf-button{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 40px;
+    margin-bottom: 40px;
+    border-bottom: 1px solid #CACACA;
+}
+
+.buro-pdf-section .pdf-button a{
+    color: #242427;
+    font-family: IBM Plex Sans;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30.6px;
+    display: flex;
+    align-items: center;
+    transition: all 0.3s;
+}
+
+.buro-pdf-section .pdf-button a:hover{
+    color: #C79696;
+}
+
+.buro-pdf-section .pdf-button a svg{
+    width: 12px;
+    height: 16px;
+    margin-left: 15px;
+}
+
+.buro-pdf-section .pdf-button a svg path{
+    transition: all 0.3s;
+}
+
+.buro-pdf-section .pdf-button a:hover svg path{
+    fill: #C79696;
+}
+
+@media (max-width: 1440px){
+    .buro-pdf-section h2{
+        font-size: 34px;
+        line-height: 58px;
+    }
+}
+
+@media (max-width: 1280px){
+    .buro-pdf-section h2{
+        font-size: 30px;
+        line-height: 50px;
+    }
+}
+
+@media (max-width: 1024px){
+    .buro-pdf-section h2{
+        font-size: 25px;
+        line-height: 38px;
+        padding-bottom: 15px;
+    }
+
+    .buro-pdf-section .pdf-button a, .buro-pdf-section p{
+        line-height: 29px;
+    }
+
+    .buro-pdf-section .pdf-button{
+        padding-bottom: 20px;
+        margin-bottom: 25px;
+    }
+
+    .buro-pdf-section:last-child .pdf-button{
+        margin-bottom: 45px;
+    }
+}
+
+@media (max-width: 768px){
+    .buro-pdf-section:last-child .pdf-button{
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width: 430px){
+    .buro-pdf-section h2{
+        font-size: 19px;
+        line-height: 29px;
+        padding-bottom: 15px;
+    }
+
+    .buro-pdf-section .pdf-button a, .buro-pdf-section p{
+        font-size: 17px;
+        line-height: 25px;
+    }
+
+    .buro-pdf-section .pdf-button{
+        flex-direction: column;
+        row-gap: 5px;
+        align-items: center;
+    }
+
+    .buro-pdf-section:last-child .pdf-button{
+        margin-bottom: 30px;
+    }
+}
+
+/* Buro Page CSS ends */
+
+
+/* werkliste page css */
+.werkliste_wrapper .werkliste_list{
+    padding: 0 137px 147px;
+  }
+  .werkliste_wrapper .werkliste_list ul{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+  }
+  .werkliste_wrapper .werkliste_list ul li{
+    color: #C79696;
+    font-family: 'IBM Plex Sans';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 170%;
+    margin-right: 40px;
+    cursor: pointer;
+    list-style: none;
+  }
+  .werkliste_wrapper .werkliste_list ul li.active{
+    color: #242427;
+  }
+  .werkliste_wrapper .werkliste_list ul li.unrealiseActive{
+    color: #242427;
+  } 
+  .werkliste_wrapper .werkliste_content {
+    display: flex;
+    column-gap: 40px;
+    padding-bottom: 140px;
+  }
+  .werkliste_wrapper .werkliste_content:nth-child(odd) .col-1 {
+    width: 60%;
+  }
+  .werkliste_wrapper .werkliste_content:nth-child(odd) .col-2 {
+    width: 40%;
+  }
+  .werkliste_wrapper .werkliste_content:nth-child(even) .col-1 {
+    width: 40%;
+  }
+  .werkliste_wrapper .werkliste_content:nth-child(even) .col-2 {
+    width: 60%;
+  }
+  .werkliste_wrapper .werkliste_content .img_wrapper {
+    line-height: 0;
+    padding-bottom: 30px;
+  }
+  .werkliste_wrapper .werkliste_content .img_wrapper img{
+    width: 100%;
+  }
+  .werkliste_wrapper .werkliste_content a {
+    color: #242427;
+    font-family: 'IBM Plex Sans';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    transition: all 0.3s;
+    word-break: break-word;
+  }
+  .werkliste_wrapper .werkliste_content a:hover{
+    color: #C79696;
+  }
+  .werkliste_wrapper .werkliste_list ul li.line {
+    width: 95px;
+    background: #C79696;
+    height: 2px;
+    margin-top: 1px;
+  }
+  .werkliste_wrapper .werkliste_content .img_wrapper a {
+    line-height: 0;
+}
+  @media (max-width:1024px) {
+    .werkliste_wrapper .werkliste_list { 
+        padding: 0 0 50px;
+    }
+    .werkliste_wrapper .werkliste_content {
+        column-gap: 30px;
+        padding-bottom: 50px;
+    }
+  }
+  @media (max-width:430px) {
+    
+    .werkliste_wrapper .werkliste_content:nth-child(odd) .col-1,
+    .werkliste_wrapper .werkliste_content:nth-child(odd) .col-2,
+    .werkliste_wrapper .werkliste_content:nth-child(even) .col-1,
+    .werkliste_wrapper .werkliste_content:nth-child(even) .col-2 {
+        width: 100%;
+    }
+    .werkliste_wrapper .werkliste_list {
+        padding-bottom: 30px;
+    }
+    .werkliste_wrapper .werkliste_content {
+        gap: 20px;
+        padding-bottom: 20px;
+        flex-direction: column;
+    }
+    .werkliste_wrapper .werkliste_list ul li,
+    .werkliste_wrapper .werkliste_content a{
+        font-size: 17px;
+    }
+    .werkliste_wrapper .werkliste_content .img_wrapper {
+        padding-bottom: 20px;
+    }
+  }
